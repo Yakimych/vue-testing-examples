@@ -2,16 +2,22 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
+    <ComponentWithData title="Component with data" />
+    <ComponentWithChildren :showChildren="true" />
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import ComponentWithData from "./components/ComponentWithData.vue";
+import ComponentWithChildren from "./components/ComponentWithChildren.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    HelloWorld,
+    ComponentWithData,
+    ComponentWithChildren
   }
 };
 </script>
